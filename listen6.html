@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function checkEmail(str) {
+if(!str.length)
+alert("Incorrect e-mail!");
+var re = new RegExp("[a-zA-Z_.]+@{1}[a-zA-Z_.]+[\.]{1}[a-zA-Z_]+");
+str = str.replace(re, "");
+if(!str.length)
+alert('OK');
+else
+alert("Incorrect e-mail!");
+}
+checkEmail("")
+    </script>
+</body>
+</html>
